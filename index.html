@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="title">
+        <span class="text-shadow-drop-right">BMI Calculator</span>
+      </h2>
+      <div class="about">
+        Track Your Health with Our BMI Calculator Easily calculate your Body
+        Mass Index (BMI) and understand your health status. Enter your height
+        and weight to get instant results and stay on top of your fitness goals!
+      </div>
+    </header>
+    <section>
+      <h3>Your information</h3>
+      <form>
+        <div class="form-container">
+          <div class="input-div">
+            <span class="labelSpan">Enter Your Weight (kg):</span>
+            <input
+              type="number"
+              name="text"
+              class="infoInput weight shadow-pop-tr"
+              placeholder="Your Weight"
+            />
+          </div>
+
+          <div class="input-div">
+            <span class="labelSpan">Enter Your Height (cm):</span>
+            <input
+              type="number"
+              name="text"
+              class="infoInput height shadow-pop-tr"
+              placeholder="Your Height"
+            />
+          </div>
+        </div>
+        <button onclick="calculationBMI(event)" class="custom-btn btn-1">
+          Calculate
+        </button>
+      </form>
+    </section>
+    <section>
+      <div class="result">Result is:</div>
+    </section>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
